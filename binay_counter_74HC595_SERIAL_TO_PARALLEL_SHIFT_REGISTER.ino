@@ -17,10 +17,10 @@ pinMode(clockPin,OUTPUT);
 void loop() {
 
 digitalWrite(latchPin,LOW);
-shiftOut(dataPin,clockPin,LSBFIRST,LED1s);
+shiftOut(dataPin,clockPin,LSBFIRST,LEDs);
 digitalWrite(latchPin,HIGH);
 
-Serial.println(LED1s,BIN);
+Serial.println(LEDs,BIN);
 delay(delayTime);
 LEDs=LEDs+1;
 
